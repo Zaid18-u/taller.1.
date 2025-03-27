@@ -25,7 +25,7 @@ int main() {
                 printf("Ingrese el ID del producto: ");
                 check = scanf("%d", &id);
                 if(check != 1){
-                    printf("Cantidad de stock no valida.");
+                    printf("Algo salio mal, ingresa otro ID.\n");
                 }
                 }while (check != 1);
 
@@ -69,7 +69,7 @@ int main() {
                     fflush(stdin);
                     check = scanf("%d", &cantidad);
                     if(check != 1){
-                        printf("Cantidad no valida.");
+                        printf("Cantidad no valida.\n");
                     }
                     }while (check != 1);
                     if (cantidad < 1)
@@ -99,7 +99,7 @@ int main() {
                     printf("Ingrese la cantidad a agregar al stock: ");
                     check = scanf("%d", &cantidad);
                     if(check != 1){
-                        printf("Cantidad no valida.");
+                        printf("Cantidad no valida.\n");
                     }
                     }while (check != 1);
 
